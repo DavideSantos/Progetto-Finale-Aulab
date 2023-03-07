@@ -1,0 +1,74 @@
+.my-Button, .my-Button:hover {
+    color: black;
+    border: solid 1px var(--maincolor);
+    background-color: var(--secondcolor);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 18px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+}
+.my-Button-login, .my-Button-login:hover {
+    color: black;
+    border: solid 1px var(--maincolor);
+    background-color: var(--secondcolor);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 18px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.my-Button-category, .my-Button-category:hover {
+    color: black;
+    border: solid 1px var(--maincolor);
+    background-color: var(--secondcolor);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 17px;
+    padding: 8px;
+    margin-bottom: 18px;
+    width: 50%;
+    text-decoration: none;
+}
+.my-Button-create, .my-Button-create:hover {
+    color: black;
+    border: solid 1px var(--maincolor);
+    background-color: var(--secondcolor);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 18px;
+    width: 150px;
+}
+.login-button-workwithus, .login-button-workwithus:hover {
+    color: black;
+    border: solid 1px var(--maincolor);
+    background-color: var(--secondcolor);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 18px;
+    width: 100%;
+}
+
+.login-button{
+    width: 630px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 38px;
+}
+.login-button-create{
+    display: flex;
+    justify-content: end;
+    padding-right: 82px;
+}

@@ -1,0 +1,34 @@
+.footer {
+    background-color:  #343536f0;
+    backdrop-filter: blur(3px);
+    color: var(--maincolor);
+}
+.text-reset {
+    text-decoration: none;
+}
+.fa-facebook-f {
+    color: #4267b2;
+}
+.fa-twitter {
+    color: #1da1f2;
+}
+.fa-google {
+    color: #db4a39;
+}
+.fa-instagram {
+    color: #e1306c;
+}
+.fa-linkedin {
+    color: #0e76a8;
+}
+.fa-github {
+    color: #6e5494;
+}
+
+.footCol {
+    color: var(--secondcolor);
+}
+
+.footcol1{
+    color: var(--thirdcolor);
+}

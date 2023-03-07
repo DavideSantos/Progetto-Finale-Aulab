@@ -1,0 +1,523 @@
+body {
+    height: 100vh;
+}
+.font-announcements {
+    font-family: "Paytone One", sans-serif;
+    text-align: center;
+    color: var(--secondcolor);
+    font-size: 5rem;
+    text-shadow: 1px 1px 10px var(--maincolor), 0 0 0.1em var(--maincolor);
+}
+
+.card-login {
+    background-color: white;
+    width: 50%;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid 3px var(--secondcolor);
+    box-shadow: 10px 10px var(--secondcolor);
+}
+
+.text-bold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.my-anchor {
+    text-decoration: none;
+}
+
+.cardWelcome {
+    background-color: white;
+    width: 80%;
+    border-radius: 20px;
+    padding: 30px;
+    border: solid 3px var(--secondcolor);
+    box-shadow: 10px 10px var(--secondcolor);
+    display: flex;
+    align-items: center;
+}
+.cardCustom {
+    background-color: white;
+    width: 85%;
+    border-radius: 20px;
+    padding: 30px;
+    border: solid 3px var(--secondcolor);
+    box-shadow: 10px 10px var(--secondcolor);
+    display: flex;
+    align-items: center;
+    margin: 55px;
+}
+
+.my-Button-index,
+.my-Button-index:hover {
+    color: black;
+    border: solid 1px var(--maincolor);
+    background-color: var(--secondcolor);
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 18px;
+    width: 200px;
+    text-decoration: none;
+}
+
+.my-Button-index:hover {
+    color: black;
+    border: solid 1px var(--maincolor);
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px;
+    margin-bottom: 18px;
+    width: 200px;
+    text-decoration: none;
+}
+
+/* .pagination > li > a, .pagination > li > span {
+    color: var(--maincolor);
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+    background-color: var(--maincolor);
+    border-color: var(--secondcolor);
+    color: var(--secondcolor);
+} */
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: var(--secondcolor);
+    background-color: var(--maincolor);
+    border-color: var(--secondcolor);
+}
+
+a.page-link,
+a.page-link:hover,
+a.page-link:active {
+    color: var(--maincolor);
+}
+
+.w-300px {
+    width: 300px;
+}
+
+/* hero section */
+#hero {
+    background-size: cover;
+    position: relative;
+    background-position: top center;
+    z-index: 1;
+    padding-top: 100px;
+}
+#hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+    z-index: -1;
+}
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero h1 {
+    width: fit-content;
+    font-size: 100px;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1s;
+}
+#hero h2 {
+    width: fit-content;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 2s;
+}
+#hero h1:nth-child(1) {
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) {
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) {
+    animation: text_reveal_name 0.5s ease forwards;
+    animation-delay: 3s;
+}
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--secondcolor);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+}
+#hero h2 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--secondcolor);
+    animation: text_reveal_box 1s ease;
+    animation-delay: 0.5s;
+}
+#hero h2:nth-child(1) span {
+    animation-delay: 0.5s;
+}
+#hero h2:nth-child(2) span {
+    animation-delay: 1.5s;
+}
+#hero h2:nth-child(3) span {
+    animation-delay: 2.5s;
+}
+
+/* end hero section */
+
+/* mobile small */
+@media only screen and (min-width: 320px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .width-search {
+        width: 300px;
+    }
+    .ul-margin {
+        margin-left: 0px;
+    }
+    .card-login {
+        width: 90%;
+    }
+    #text-login {
+        font-size: 9px;
+        margin: 0px;
+    }
+    .login-button {
+        width: 290px;
+        padding: 0px;
+    }
+    #hero h1 {
+        font-size: 50px;
+    }
+    #hero h2 {
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    #videoWelcome {
+        width: 18rem;
+        padding-top: 15px;
+    }
+    .cardWelcome {
+        width: 110%;
+    }
+    .cardCustom {
+        margin: 15px;
+    }
+    #my-button {
+        width: 50px;
+        height: 30px;
+        padding: 0px;
+        font-size: 10px;
+    }
+    .my-Button,
+    .my-Button:hover {
+        font-size: 15px;
+    }
+    .my-Button-category,
+    .my-Button-category:hover {
+        font-size: 14px;
+    }
+    .w-300px {
+        width: 230px;
+        white-space: nowrap;
+    }
+    .font-announcements {
+        white-space: nowrap;
+        font-size: 29px;
+    }
+}
+/* mobile large */
+@media only screen and (min-width: 425px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .width-search {
+        width: 350px;
+    }
+    #hero h1 {
+        font-size: 65px;
+    }
+    #hero h2 {
+        font-size: 15px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    #videoWelcome {
+        width: 24rem;
+        padding-top: 15px;
+    }
+    .cardWelcome {
+        width: 100%;
+    }
+    .my-Button,
+    .my-Button:hover {
+        /* padding: 8px;
+        margin-bottom: 18px; */
+        font-size: 15px;
+    }
+    .my-Button-category,
+    .my-Button-category:hover {
+        /* padding: 8px;
+        margin-bottom: 18px; */
+        font-size: 15px;
+    }
+    .w-300px {
+        width: 230px;
+        white-space: nowrap;
+    }
+    .font-announcements {
+        white-space: nowrap;
+        font-size: 35px;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .width-search {
+        width: 690px;
+    }
+    #hero h1 {
+        font-size: 60px;
+    }
+    #hero h2 {
+        font-size: 15px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    #videoWelcome {
+        width: 21rem;
+        padding-top: 15px;
+    }
+    .cardWelcome {
+        width: 300px;
+    }
+
+    .my-Button,
+    .my-Button:hover {
+        /* padding: 8px;
+        margin-bottom: 18px; */
+        font-size: 15px;
+    }
+    .my-Button-category,
+    .my-Button-category:hover {
+        /* padding: 8px;
+        margin-bottom: 18px; */
+        font-size: 15px;
+    }
+    .w-300px {
+        width: 230px;
+        white-space: nowrap;
+    }
+    .font-announcements {
+        white-space: nowrap;
+        font-size: 45px;
+    }
+}
+
+/* laptop normal*/
+@media only screen and (min-width: 1024px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .width-search {
+        width: 600px;
+    }
+    .card-login {
+        background-color: white;
+        width: 50%;
+        border-radius: 20px;
+        padding: 10px;
+        border: solid 3px var(--secondcolor);
+        box-shadow: 10px 10px var(--secondcolor);
+    }
+    #text-login {
+        font-size: 15px;
+        margin: 10px;
+    }
+    .login-button {
+        width: 550px;
+        padding: 10px;
+        margin-left: 15px;
+    }
+    #hero h1 {
+        font-size: 80px;
+    }
+    #hero h2 {
+        font-size: 20px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    #videoWelcome {
+        width: 28rem;
+        padding-top: 15px;
+    }
+    .cardWelcome {
+        width: 300px;
+    }
+    #my-button {
+        color: black;
+        border: solid 1px var(--maincolor);
+        background-color: var(--secondcolor);
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 18px;
+        width: 100px;
+    }
+    .my-Button,
+    .my-Button:hover {
+        /* padding: 8px;
+        margin-bottom: 18px; */
+        font-size: 15px;
+    }
+    .my-Button-category,
+    .my-Button-category:hover {
+        /* padding: 8px;
+        margin-bottom: 18px; */
+        font-size: 15px;
+    }
+    .w-300px {
+        width: 225px;
+        white-space: nowrap;
+    }
+    .font-announcements {
+        white-space: nowrap;
+        font-size: 75px;
+    }
+}
+
+/* laptop medium */
+@media only screen and (min-width: 1280px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+    .ul-margin {
+        margin-left: 50px;
+    }
+    #hero h1 {
+        font-size: 95px;
+    }
+    #hero h2 {
+        font-size: 22px;
+        text-align: center;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    #videoWelcome {
+        width: 48rem;
+        padding-top: 15px;
+    }
+    .cardWelcome {
+        width: 300px;
+    }
+
+    .my-Button,
+    .my-Button:hover {
+        color: black;
+        border: solid 1px var(--maincolor);
+        background-color: var(--secondcolor);
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 13px;
+        padding: 8px;
+        margin-bottom: 18px;
+        width: 100px;
+        text-decoration: none;
+    }
+    #my-Button-login,
+    #my-Button-login:hover {
+        color: black;
+        border: solid 1px var(--maincolor);
+        background-color: var(--secondcolor);
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 8px;
+        margin-top: 18px;
+        width: 100px;
+        text-decoration: none;
+    }
+    .my-Button-category,
+    .my-Button-category:hover {
+        /* padding: 8px;
+        margin-bottom: 18px; */
+        font-size: 13px;
+        width: 120px;
+        padding-top: 10px;
+    }
+    .w-300px {
+        width: 230px;
+        white-space: nowrap;
+    }
+}
+/* laptop large */
+
+@keyframes text_reveal_box {
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal {
+    100% {
+        color: var(--secondcolor);
+        text-shadow: 3px 3px 3px var(--maincolor), 0 0 0.1em var(--maincolor);
+    }
+}
+@keyframes text_reveal_name {
+    100% {
+        font-weight: 500px;
+    }
+}
